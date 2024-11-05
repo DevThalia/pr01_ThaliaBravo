@@ -1,0 +1,102 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0fdf4; /* Fondo verde pastel */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #3a6b3d; /* Verde oscuro pastel */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Estilo del contenedor de mensajes */
+  section {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Estilo de los mensajes */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  li {
+    background-color: #e5f7e0; /* Fondo verde pastel muy suave */
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+  
+  li:nth-child(odd) {
+    background-color: #d9f0c6; /* Diferente tono de verde para alternar */
+  }
+  
+  /* Estilo del formulario de envío */
+  input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #c5e6c4; /* Verde suave */
+    border-radius: 25px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f8fff7; /* Fondo muy claro */
+  }
+  
+  input[type="text"]:focus {
+    border-color: #8bc34a; /* Verde más fuerte al enfocar */
+  }
+  
+  button {
+    background-color: #8bc34a; /* Verde suave */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #7cb342; /* Verde más oscuro al pasar el mouse */
+  }
+  
+  button:active {
+    background-color: #689f38; /* Verde aún más oscuro al hacer clic */
+  }
+  
+  /* Estilos para los mensajes del usuario */
+  span {
+    font-weight: bold;
+    color: #3a6b3d; /* Verde oscuro para el nombre de usuario */
+  }
+  
