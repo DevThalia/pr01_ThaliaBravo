@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0fdf4; /* Fondo verde pastel */
+    background-color: #f0fdf4; 
     color: #333;
     display: flex;
     justify-content: center;
@@ -18,17 +18,16 @@
   
   h1 {
     font-size: 2rem;
-    color: #3a6b3d; /* Verde oscuro pastel */
+    color: #3a6b3d;
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
   }
   
-  /* Estilo del contenedor de mensajes */
   section {
     width: 100%;
     max-width: 600px;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff; 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,7 +36,7 @@
     gap: 20px;
   }
   
-  /* Estilo de los mensajes */
+
   ul {
     list-style: none;
     padding: 0;
@@ -47,7 +46,7 @@
   }
   
   li {
-    background-color: #e5f7e0; /* Fondo verde pastel muy suave */
+    background-color: #e5f7e0; 
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 10px;
@@ -56,27 +55,27 @@
   }
   
   li:nth-child(odd) {
-    background-color: #d9f0c6; /* Diferente tono de verde para alternar */
+    background-color: #d9f0c6; 
   }
   
-  /* Estilo del formulario de envío */
+
   input[type="text"] {
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #c5e6c4; /* Verde suave */
+    border: 1px solid #c5e6c4;
     border-radius: 25px;
     outline: none;
     width: 100%;
     margin-bottom: 10px;
-    background-color: #f8fff7; /* Fondo muy claro */
+    background-color: #f8fff7; 
   }
   
   input[type="text"]:focus {
-    border-color: #8bc34a; /* Verde más fuerte al enfocar */
+    border-color: #8bc34a; 
   }
   
   button {
-    background-color: #8bc34a; /* Verde suave */
+    background-color: #8bc34a; 
     color: white;
     border: none;
     border-radius: 25px;
@@ -87,16 +86,15 @@
   }
   
   button:hover {
-    background-color: #7cb342; /* Verde más oscuro al pasar el mouse */
+    background-color: #7cb342; 
   }
   
   button:active {
-    background-color: #689f38; /* Verde aún más oscuro al hacer clic */
+    background-color: #689f38; 
   }
   
-  /* Estilos para los mensajes del usuario */
   span {
     font-weight: bold;
-    color: #3a6b3d; /* Verde oscuro para el nombre de usuario */
+    color: #3a6b3d; 
   }
   
