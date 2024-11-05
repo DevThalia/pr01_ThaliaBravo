@@ -2,28 +2,36 @@
 import { ref } from 'vue';
 import ComponenteMensaje from './ComponenteMensaje.vue';
 
-const props = defineProps({
-    usuario: String
-});
-
+const logado = 'Usuario 1';
 const mensajes = ref([]); 
 
-const agregarMensaje = (mensaje) => {
-    mensajes.value.push(mensaje); 
+const postearMensaje = nuevoMensaje => {
+    if(validarMensaje(nuevoMensaje.mensaje)) {
+        mensajes.value.push(`${nuevoMensaje.user}: ${nuevoMensaje.mensaje}`);
+    }
+}
+
+const validarMensaje = mensaje => {
+    if (
+        typeof mensaje === 'string' &&
+        mensaje.trim() !== '' &&
+        mensaje.trim().length >= 1
+    ) {
+        return true;
+    } else {
+        return false;
+    }
 }
 </script>
 
 <template>
 <h1>Chat entre usuarios</h1>
-<section id="mensajeria">
+<section>
     <ul>
-        Mensajes
         <li v-for="(mensaje, index) in mensajes" :key="index">{{ mensaje }}</li>
     </ul>
+    <ComponenteMensaje :logado="logado" @mensajeEnviado="postearMensaje" />
 </section>
-<div id="contieneInputMensajes">
-        <ComponenteMensaje @mensajeEnviado="agregarMensaje" /> 
-    </div>
 </template>
 
 <style scoped>
